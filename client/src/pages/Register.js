@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const App = () => {
+const Register = () => {
     const [name, setName] = useState('test');
     const [email, setEmail] = useState('test@test.com');
     const [password, setPassword] = useState('password');
@@ -10,7 +10,7 @@ const App = () => {
         const response = await fetch('http://localhost:5000/api/register', {
             method: 'POST',
             headers: {
-                'Content-type': 'application/json',
+                'Content-Type': 'application/json',
             },
             body: JSON.stringify({
                 name,
@@ -23,34 +23,34 @@ const App = () => {
     };
 
     return (
-        <>
+        <div>
             <h1>Register</h1>
             <form onSubmit={submitHandler}>
                 <input
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    type="text"
-                    placeholder="Name"
+                    type='text'
+                    placeholder='First Name'
                 />
                 <br />
                 <input
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    type="email"
-                    placeholder="Email"
+                    type='email'
+                    placeholder='Email'
                 />
                 <br />
                 <input
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    type="password"
-                    placeholder="Password"
+                    type='password'
+                    placeholder='Password'
                 />
                 <br />
-                <button type="submit">Register</button>
+                <button type='submit'>Register</button>
             </form>
-        </>
+        </div>
     );
 };
 
-export default App;
+export default Register;

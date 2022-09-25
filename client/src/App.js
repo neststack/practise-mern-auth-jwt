@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Nav from './Nav/Nav';
 import Home from './pages/Home';
 import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
+// import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 
 const App = (nums) => {
@@ -14,7 +14,7 @@ const App = (nums) => {
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
-                <Route path="/dashboard" element={<Dashboard />} />
+                {/* <Route path="/dashboard" element={<Dashboard />} /> */}
             </Routes>
         </>
     );
