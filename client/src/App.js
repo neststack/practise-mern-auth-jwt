@@ -6,7 +6,7 @@ import Login from './pages/Login';
 // import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 
-const App = (nums) => {
+const App = () => {
     return (
         <>
             <Nav />
