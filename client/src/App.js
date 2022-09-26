@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import Nav from './Nav/Nav';
 import Home from './pages/Home';
 import Login from './pages/Login';
@@ -10,12 +10,10 @@ const App = (nums) => {
     return (
         <>
             <Nav />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-                {/* <Route path="/dashboard" element={<Dashboard />} /> */}
-            </Routes>
+            <Route path='/' exact component={Home} />
+            <Route path='/login' exact component={Login} />
+            <Route path='/register' exact component={Register} />
+            {/* <Route path='/dashboard' exact component={Dashboard} /> */}
         </>
     );
 };
