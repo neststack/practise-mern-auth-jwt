@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const Login = () => {
+    const history = useHistory();
     const [email, setEmail] = useState('test@test.com');
     const [password, setPassword] = useState('password');
 
@@ -17,6 +19,14 @@ const Login = () => {
             }),
         });
         const data = await response.json();
+
+        if (data.user) {
+            localStorage.setItem('token', data.user);
+            alert('Login successful');
+            history.replace('/dashboard');
+        } else {
+            alert('Please check your credentials');
+        }
         console.log(data);
     };
 
