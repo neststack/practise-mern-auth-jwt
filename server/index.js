@@ -38,8 +38,8 @@ app.post('/api/register', async (req, res) => {
         res.json({
             status: 'ok',
             body: {
-                name: req.body.name,
-                email: req.body.email,
+                name: user.name,
+                email: user.email,
             },
         });
     } catch (err) {
