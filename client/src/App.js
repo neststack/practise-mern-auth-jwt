@@ -7,17 +7,16 @@ import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 
 const App = () => {
-    const solve = function (s) {
-        let arr = s.split(' ');
-        let finalArr = new Array(arr.length);
-        for (let i = 0; i < arr.length; i++) {
-            const index = parseInt(arr[i][arr[i].length - 1], 10);
-            finalArr[index - 1] = arr[i].slice(0, arr[i].length - 1);
+    const solve = function (s, indices) {
+        let finalArr = [];
+        for (let i = 0; i < s.length; i++) {
+            finalArr[indices[i]] = s[i];
         }
-        return finalArr.join(' ');
+        return finalArr.join('');
     };
-    const s = 'is2 sentence4 This1 a3';
-    console.log(solve(s));
+    const s = 'codeleet';
+    const indices = [4, 5, 6, 7, 0, 2, 1, 3];
+    console.log(solve(s, indices));
     return (
         <>
             <Nav />
