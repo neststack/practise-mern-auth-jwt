@@ -1,22 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Nav from './Nav/Nav';
+import Nav from './nav/Nav';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import Register from './pages/Register';
 
 const App = () => {
-    const solve = function (s, indices) {
-        let finalArr = [];
-        for (let i = 0; i < s.length; i++) {
-            finalArr[indices[i]] = s[i];
-        }
-        return finalArr.join('');
-    };
-    const s = 'codeleet';
-    const indices = [4, 5, 6, 7, 0, 2, 1, 3];
-    console.log(solve(s, indices));
     return (
         <>
             <Nav />
