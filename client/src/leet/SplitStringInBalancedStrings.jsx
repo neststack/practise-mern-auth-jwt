@@ -2,15 +2,14 @@ import React from 'react';
 
 const x = () => {
     const solve = function (s) {
-    let countR = 0;
-    let countL = 0;
-    let count = 0;
-    for (let i = 0; i < s.length; i++) {
-        if (s[i] === 'L') countL++;
-        if (s[i] === 'R') countR++;
-        if (countL === countR) count++;
-    }
-    return count;
+        let stack = 0;
+        let count = 0;
+        for (let i = 0; i < s.length; i++) {
+            if (s[i] === 'L') stack++;
+            if (s[i] === 'R') stack--;
+            if (stack === 0) count++;
+        }
+        return count;
     };
     const s = 'RLRRLLRLRL';
     console.log(solve(s));
