@@ -3,16 +3,20 @@ import React from 'react';
 // import SplitStringInBalancedStrings from './SplitStringInBalancedStrings';
 // import CellsRangeInExcelSheet from './CellsRangeInExcelSheet';
 // import LargestLocalValuesInMatrix from './LargestLocalValuesInMatrix';
-import FindCenterOfStarGraph from './FindCenterOfStarGraph';
+// import FindCenterOfStarGraph from './FindCenterOfStarGraph';
+// import CheckSentenceIsPangram from './CheckSentenceIsPangram';
+import RearrangeArrayElementsBySign from './RearrangeArrayElementsBySign';
 
 const Code = () => {
     return (
         <>
+            <RearrangeArrayElementsBySign />
             {/* <DecodeTheMessage /> */}
             {/* <SplitStringInBalancedStrings /> */}
             {/* <CellsRangeInExcelSheet /> */}
             {/* <LargestLocalValuesInMatrix /> */}
-            <FindCenterOfStarGraph />
+            {/* <FindCenterOfStarGraph /> */}
+            {/* <CheckSentenceIsPangram /> */}
         </>
     );
 };
