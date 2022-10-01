@@ -2,7 +2,8 @@ import React from 'react';
 // import DecodeTheMessage from './DecodeTheMessage';
 // import SplitStringInBalancedStrings from './SplitStringInBalancedStrings';
 // import CellsRangeInExcelSheet from './CellsRangeInExcelSheet';
-import LargestLocalValuesInMatrix from './LargestLocalValuesInMatrix';
+// import LargestLocalValuesInMatrix from './LargestLocalValuesInMatrix';
+import FindCenterOfStarGraph from './FindCenterOfStarGraph';
 
 const Code = () => {
     return (
@@ -10,7 +11,8 @@ const Code = () => {
             {/* <DecodeTheMessage /> */}
             {/* <SplitStringInBalancedStrings /> */}
             {/* <CellsRangeInExcelSheet /> */}
-            <LargestLocalValuesInMatrix />
+            {/* <LargestLocalValuesInMatrix /> */}
+            <FindCenterOfStarGraph />
         </>
     );
 };
