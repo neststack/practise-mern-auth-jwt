@@ -5,12 +5,16 @@ import React from 'react';
 // import LargestLocalValuesInMatrix from './LargestLocalValuesInMatrix';
 // import FindCenterOfStarGraph from './FindCenterOfStarGraph';
 // import CheckSentenceIsPangram from './CheckSentenceIsPangram';
-import RearrangeArrayElementsBySign from './RearrangeArrayElementsBySign';
+// import RearrangeArrayElementsBySign from './RearrangeArrayElementsBySign';
+// import NumberOfStepsToReduceNumToZero from './NumberOfStepsToReduceNumToZero';
+import GroupPeopleGivenGroupSize from './GroupPeopleGivenGroupSize';
 
 const Code = () => {
     return (
         <>
-            <RearrangeArrayElementsBySign />
+            <GroupPeopleGivenGroupSize />
+            {/* <NumberOfStepsToReduceNumToZero /> */}
+            {/* <RearrangeArrayElementsBySign /> */}
             {/* <DecodeTheMessage /> */}
             {/* <SplitStringInBalancedStrings /> */}
             {/* <CellsRangeInExcelSheet /> */}
