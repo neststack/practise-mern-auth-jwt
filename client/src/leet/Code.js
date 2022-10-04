@@ -10,12 +10,14 @@ import React from 'react';
 // import GroupPeopleGivenGroupSize from './GroupPeopleGivenGroupSize';
 // import NumberOfLaserBeamsInBank from './NumberOfLaserBeamsInBank';
 // import TriangularSumOfArray from './TriangularSumOfArray';
-import NumberOfCommonFactors from './NumberOfCommonFactors';
+// import NumberOfCommonFactors from './NumberOfCommonFactors';
+import CountEqualDivisiblePairsInArray from './CountEqualDivisiblePairsInArray';
 
 const Code = () => {
     return (
         <>
-            <NumberOfCommonFactors />
+            <CountEqualDivisiblePairsInArray />
+            {/* <NumberOfCommonFactors /> */}
             {/* <TriangularSumOfArray /> */}
             {/* <NumberOfLaserBeamsInBank /> */}
             {/* <GroupPeopleGivenGroupSize /> */}
