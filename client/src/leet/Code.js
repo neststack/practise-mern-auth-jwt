@@ -9,12 +9,14 @@ import React from 'react';
 // import NumberOfStepsToReduceNumToZero from './NumberOfStepsToReduceNumToZero';
 // import GroupPeopleGivenGroupSize from './GroupPeopleGivenGroupSize';
 // import NumberOfLaserBeamsInBank from './NumberOfLaserBeamsInBank';
-import TriangularSumOfArray from './TriangularSumOfArray';
+// import TriangularSumOfArray from './TriangularSumOfArray';
+import NumberOfCommonFactors from './NumberOfCommonFactors';
 
 const Code = () => {
     return (
         <>
-            <TriangularSumOfArray />
+            <NumberOfCommonFactors />
+            {/* <TriangularSumOfArray /> */}
             {/* <NumberOfLaserBeamsInBank /> */}
             {/* <GroupPeopleGivenGroupSize /> */}
             {/* <NumberOfStepsToReduceNumToZero /> */}
